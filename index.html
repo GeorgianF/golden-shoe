@@ -7,17 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
     <!-- JS -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous" defer>
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous" defer>
     </script>
+    <script src="https://kit.fontawesome.com/5ef8bf6f91.js" crossorigin="anonymous"></script>
 
 
 
@@ -40,6 +41,7 @@
                     <li><a class="nav-item" href="#">about</a></li>
                     <li><a class="nav-item" href="#">contact</a></li>
                     <li><a class="nav-item" href="#">account</a></li>
+                    <img id="cart-image" src="./media/cart.png" alt="cart-image">
                 </ul>
             </nav>
         </div>
@@ -49,6 +51,7 @@
     <!-- CONTENT -->
     <div class="background-container">
         <div class="container">
+
             <div class="row main-content d-flex align-items-center justify-content-around">
                 <div class="col-xl-6 col-left">
                     <h1>Give your life <br> a new style!</h1>
@@ -62,11 +65,151 @@
                     <img src="./media/image1.png" alt="football-players">
                 </div>
             </div>
+            <hr>
+            <div class="row categories">
+                <h2 class="d-flex align-items-center justify-content-center mb-5 mt-5 text-uppercase">
+                    Featured Products
+                </h2>
+                <div class="col-md-4 col-lg-3 categories-img">
+                    <img src="./media/category-1.jpg" alt="shoes-image-1">
+                    <a class="text-decoration-none" href="">
+                        <p class="text-center mt-2"> Red Nation Sneakers </p>
+                        <p class="text-center fw-bold"> ONLY <span class="text-danger fw-bolder">69.99 &#163;</span></p>
+                    </a>
+                </div>
+                <div class="col-md-4 col-lg-3 categories-img">
+                    <img src="./media/category-2.jpg" alt="shoes-image-2">
+                    <a class="text-decoration-none" href="">
+                        <p class="text-center mt-2"> Superstar Sneakers </p>
+                        <p class="text-center fw-bold"> ONLY <span class="text-danger fw-bolder">55.99 &#163;</span></p>
+                    </a>
+                </div>
+                <div class="col-md-4 col-lg-3 categories-img">
+                    <img src="./media/category-3.jpg" alt="shoes-image-3">
+                    <a class="text-decoration-none" href="">
+                        <p class="text-center mt-2"> Golden Special Sneakers </p>
+                        <p class="text-center fw-bold"> ONLY <span class="text-danger fw-bolder">52.49 &#163;</span> </p>
+                    </a>
+                </div>
+            </div>
+            <hr>
+            <div class="row popular-items">
+                <h2 class="text-uppercase text-center mt-4 mb-4">
+                    popular items
+                </h2>
+                <div class="col-lg-8 offset-2">
+                <!-- carousel -->
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="col-lg-3">
+                                <div>
+                                    <img src="./media/popular-1.jpeg" alt="popular-item-1 mb-2">
+                                </div>
+                                <div class="text-center mt-2">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </div>
+                                <div class="text-center">
+                                    <p class="fst-italic"><q>I imagine myself as James Bond in this shoes, such class</q></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-lg-3">
+                                <div>
+                                    <img src="./media/popular-2.jpeg" alt="popular-item-2 mb-2">
+                                </div>
+                                <div class="text-center mt-2">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </div>
+                                <div class="text-center">
+                                    <p class="fst-italic"><q>Amazing quality and very light</q></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-lg-3">
+                                <div>
+                                    <img src="./media/popular-3.jpeg" alt="popular-item-3 mb-2">
+                                </div>
+                                <div class="text-center mt-2">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </div>
+                                <div class="text-center">
+                                    <p class="fst-italic"><q>The best shoes that I had, will definetly buy again</q></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-lg-3">
+                                <div>
+                                    <img src="./media/popular-4.jpeg" alt="popular-item-4 mb-2">
+                                </div>
+                                <div class="text-center mt-2">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="text-center">
+                                    <p class="fst-italic"><q>Very comfortable, and love the color</q></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                
+                <!-- end carousel -->
+                <!-- <div class="col-lg-3">
+                    <div>
+                        <img src="./media/popular-1.jpeg" alt="popular-item-1 mb-2">
+                    </div>
+                    <div class="text-center mt-2">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <img src="./media/popular-2.jpeg" alt="popular-item-2">
+                </div>
+                <div class="col-lg-3">
+                    <img src="./media/popular-3.jpeg" alt="popular-item-3">
+                </div>
+                <div class="col-lg-3">
+                    <img src="./media/popular-4.jpeg" alt="popular-item-4">
+                </div> -->
+            </div>
         </div>
     </div>
 </div>
     <!-- END CONTENT -->
-
 
 </body>
 </html>
