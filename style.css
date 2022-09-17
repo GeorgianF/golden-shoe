@@ -9,11 +9,8 @@
 
 :root {
     --main-color: #e6e0bb;
+    --secondary-color: #f98e71;
     --text-color: #000;
-}
-
-body {
-    overflow-x: hidden;
 }
 
 /* -------------------NAV BAR AND LOGO */
@@ -24,7 +21,8 @@ body {
 
 .navbar {
     background-color: var(--main-color);
-    align-items: flex-start;
+    align-items: center;
+    font-size: 18px;
 }
 
 nav ul {
@@ -50,7 +48,9 @@ nav ul li a {
 }
 
 .logo img {
-    padding-left: 20px;
+    padding-left: 30px;
+    height: 150px;
+    width: 240px;
 }
 
 .nav-item {
@@ -80,6 +80,20 @@ nav ul li a {
 #cart-image {
     width: 30px;
     height: 30px;
+    position: absolute;
+    top: 20px;
+    right: 90px;
+}
+
+#menu-image {
+    width: 28px;
+    height: 28px;
+    transform: translateY(12%);
+    margin-left: 20px;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    margin-right: 20px;
 }
 
 /* ----------- END OF NAV BAR AND LOGO */
@@ -324,6 +338,47 @@ footer {
     font-style: normal
 }
 
+/* -------------------- END FOOTER */
+
+
+/* -------------------- MEDIA QUERIES */
+/* @media only screen and (max-width: 1200px) {
+    .navbar {
+        position: relative;
+    } 
+    
+    nav {
+        font-size: 14px;
+    }
+
+    nav ul {
+        position: absolute;
+        top: 166px;
+        left: 0;
+        background-color: #333;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        opacity: 0.8;
+        
+    }
+    
+    .nav-item {
+        color: #fff;
+        letter-spacing: 2px;
+        font-size: 18px;
+        display: block;
+        margin: 50px 10px 0 10px;
+    }
+}  */
+
+@media only screen and (max-width: 991.98px) {
+    
+
+
+}
+
+
 @media only screen and (max-width: 768px) {
     .footer-list-header {
         font-size: 2em
@@ -343,6 +398,17 @@ footer {
 
     .footer-bottom-wrapper {
         font-size: 1.3em
+    }
+}
+
+@media only screen and (max-width: 767.98px) {
+    .testimonials-item {
+        margin-bottom: 15px;
+    }
+
+    .main-content {
+        flex-wrap: nowrap;
+        font-size: smaller;
     }
 }
 
@@ -437,4 +503,4 @@ footer {
     }
 }
 
-/* -------------------- END FOOTER */
+

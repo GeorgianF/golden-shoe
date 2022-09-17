@@ -30,30 +30,38 @@
 <div class="header">
     <!-- NAV BAR AND LOGO -->
     <div class="container-fluid">
-        <div class="navbar">
-            <div class="logo">
-                <img src="./media/44effcd6f9e74933a42101d490c67fb6.png" alt="golden-shoe-logo">
+        <div class="row">
+            <div class="navbar">
+                <div class="col-md-2 col-lg-2">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="./media/44effcd6f9e74933a42101d490c67fb6.png" alt="golden-shoe-logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-8 col-lg-6">
+                    <nav>
+                        <ul class="navbar-items d-flex justify-content-center text-decoration-none">
+                            <li><a class="nav-item" href="#">home</a></li>
+                            <li><a class="nav-item" href="#">store</a></li>
+                            <li><a class="nav-item" href="#">returns/faq</a></li>
+                            <li><a class="nav-item" href="#">contact</a></li>
+                            <li><a class="nav-item" href="#">account</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-            <nav>
-                <ul class="navbar-items d-flex justify-content-center text-decoration-none">
-                    <li><a class="nav-item" href="#">home</a></li>
-                    <li><a class="nav-item" href="#">products</a></li>
-                    <li><a class="nav-item" href="#">returns and faq</a></li>
-                    <li><a class="nav-item" href="#">contact</a></li>
-                    <li><a class="nav-item" href="#">account</a></li>
-                    <img id="cart-image" src="./media/cart.png" alt="cart-image">
-                </ul>
-            </nav>
         </div>
     </div>
+    <img id="cart-image" src="./media/cart.png" alt="cart-image">
+    <img id="menu-image" src="./media/menu.png" alt="menu-image">
     <!-- END OF NAV BAR -->
 
     <!-- CONTENT -->
     <div class="background-container">
         <div class="container">
-
             <div class="row main-content d-flex align-items-center justify-content-around">
-                <div class="col-xl-6 col-left">
+                <div class="col-lg-5 off-lg-1 col-left">
                     <h1>Give your life <br> a new style!</h1>
                     <p>
                         Success isn't always about greatness. It's about consistency. <br>
@@ -61,7 +69,7 @@
                     </p>
                     <a href="#" class="btn">Explore now &#8594</a>
                 </div>
-                <div class="col-md-8 col-right">
+                <div class="col-lg-5 col-right">
                     <img src="./media/image1.png" alt="football-players">
                 </div>
             </div>
@@ -70,21 +78,21 @@
                 <h2 class="d-flex align-items-center justify-content-center mb-5 mt-5 text-uppercase">
                     Featured Products
                 </h2>
-                <div class="col-md-4 col-lg-3 categories-img">
+                <div class="col-md-3 col-lg-3 categories-img">
                     <img src="./media/category-1.jpg" alt="shoes-image-1">
                     <a class="text-decoration-none" href="">
                         <p class="text-center mt-2"> Red Nation Sneakers </p>
                         <p class="text-center fw-bold"> ONLY <span class="text-danger fw-bolder">69.99 &#163;</span></p>
                     </a>
                 </div>
-                <div class="col-md-4 col-lg-3 categories-img">
+                <div class="col-md-3 col-lg-3 categories-img">
                     <img src="./media/category-2.jpg" alt="shoes-image-2">
                     <a class="text-decoration-none" href="">
                         <p class="text-center mt-2"> Superstar Sneakers </p>
                         <p class="text-center fw-bold"> ONLY <span class="text-danger fw-bolder">55.99 &#163;</span></p>
                     </a>
                 </div>
-                <div class="col-md-4 col-lg-3 categories-img">
+                <div class="col-md-3 col-lg-3 categories-img">
                     <img src="./media/category-3.jpg" alt="shoes-image-3">
                     <a class="text-decoration-none" href="">
                         <p class="text-center mt-2"> Golden Special Sneakers </p>
@@ -97,7 +105,7 @@
                 <h2 class="text-uppercase text-center mt-4 mb-4">
                     popular items
                 </h2>
-                <div class="col-lg-8 offset-2">
+                <div class="col-lg-8 offset-lg-2">
                 <!-- carousel -->
                 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
@@ -188,7 +196,7 @@
 
             <div class="container testimonials">
                 <div class="row">
-                    <div class="col-lg-3 testimonials-item">
+                    <div class="col-sm-8 col-md-3 col-lg-3 testimonials-item">
                         <i class="fa-solid fa-quote-left"></i>
                         <p class="text-center">
                             <q class="fst-italic fs-6">Super pleased with all that Golden Shoes has to offer, fast delivery.</q>
@@ -203,7 +211,7 @@
                         <img class="mt-2 mb-2" src="./media/user-1.png" alt="user-1">
                         <h5 class="fs-6">Mary Hudson</h5>
                     </div>
-                    <div class="col-lg-3 testimonials-item">
+                    <div class="col-sm-8 col-md-3 col-lg-3 testimonials-item">
                         <i class="fa-solid fa-quote-left"></i>
                         <p class="text-center ">
                             <q class="fst-italic fs-6">The shoes were delivered fast with a small gift, thank you Golden Shoes</q>
@@ -218,7 +226,7 @@
                         <img class="mt-2 mb-2" src="./media/user-2.png" alt="user-2">
                         <h5 class="fs-6">Peter Parker</h5>
                     </div>
-                    <div class="col-lg-3 testimonials-item">
+                    <div class="col-sm-8 col-md-3 col-lg-3 testimonials-item">
                         <i class="fa-solid fa-quote-left"></i>
                         <p class="text-center">
                             <q class="fst-italic fs-6"> The pair was not my size, returned it without any hussle.</q>
