@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"
+        defer>
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"
+        defer>
+    </script>
+    <script src="https://kit.fontawesome.com/5ef8bf6f91.js" crossorigin="anonymous"></script>
+
+    <title>Products | Golden Shoe </title>
+</head>
+
+<body>
+    <div class="header">
+        <!-- NAV BAR AND LOGO -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 col-lg-12">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="./media/test.png" alt="golden-shoe-logo">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-lg-12 flex-row">
+                    <nav>
+                        <ul
+                            class="navbar-items d-flex aling-items-center justify-content-center flex-row text-decoration-none">
+                            <li><a class="nav-item" href="./index.html">home</a></li>
+                            <li><a class="nav-item" href="./store">store</a></li>
+                            <li><a class="nav-item" href="#">account</a></li>
+                            <img id="cart-image" src="./media/cart.png" alt="cart-image">
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <img id="menu-button-mobile" src="./media/menu.png" alt="menu-icon">
+        </div>
+    </div>
+    <!-- END OF NAV BAR -->
+
+    <div class="background-container">
+        <div class="container">
+            <div class="row">
+                <h2 class="d-flex align-items-center justify-content-center mb-5 mt-5 text-uppercase">all products
+                </h2>
+            </div>
+            <div class="row">
+                <select class="offset-8 col-4 offset-sm-8 col-sm-4 offset-md-9 col-md-3 ">
+                    <option>Sort by price</option>
+                    <option>Sort by popularity</option>
+                    <option>Sort by sale</option>
+                    <option>Sort by rating</option>
+                </select>
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <div class="row all-products">
+                <div class="col-sm-3 col-md-3 col-6">
+                    <img src="./media/product-1.jpg" alt="product-1">
+                    <div class="text-center mt-1 text-dark">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-center">Red T-shirt <span
+                            class="text-decoration-line-through text-danger">25.99</span> 15.99 &#163 </p>
+                </div>
+                <div class="col-sm-3 col-md-3 col-6">
+                    <a class="text-dark" href="./product-details.html">
+                    <img src="./media/product-2.jpg" alt="product-2">
+                    <div class="text-center mt-1 text-dark">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-dark text-center">Running Shoes <span
+                            class="text-decoration-line-through text-danger">85.99</span> 55.99 &#163 </p>
+                    </a>
+                </div>
+                <div class="col-sm-3 col-md-3 col-6">
+                    <img src="./media/product-3.jpg" alt="product-3">
+                    <div class="text-center mt-1 text-dark">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-center">Leather Shoes <span
+                            class="text-decoration-line-through text-danger">95.99</span> 65.99 &#163 </p>
+                </div>
+                <div class="col-md-3 col-sm-3 col-6">
+                    <img src="./media/product-4.jpg" alt="product-4">
+                    <div class="text-center mt-1 text-dark">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-center">Blue T-shirt <span
+                            class="text-decoration-line-through text-danger">25.99</span> 15.99 &#163 </p>
+                </div>
+            </div>
+        <br>
+            <div class="row all-products">
+                <div class="col-md-3 col-sm-3 col-6">
+                    <img src="./media/product-5.jpg" alt="product-5">
+                    <div class="text-center mt-1 text-dark">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-center">Hi-Top Sneakers <span
+                            class="text-decoration-line-through text-danger">115.99</span> 95.99 &#163 </p>
+                </div>
+                <div class="col-md-3 col-sm-3 col-6">
+                    <img src="./media/product-6.jpg" alt="product-6">
+                    <div class="text-center mt-1 text-dark">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-center">Black T-shirt 25.99 &#163 </p>
+                </div>
+                <div class="col-md-3 col-sm-3 col-6">
+                    <img src="./media/product-7.jpg" alt="product-7">
+                    <div class="text-center mt-1 text-dark">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-center">HRX Socks 5.99 &#163 </p>
+                </div>
+                <div class="col-md-3 col-sm-3 col-6">
+                    <img src="./media/product-8.jpg" alt="product-8">
+                    <div class="text-center mt-1 text-dark">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-center">Fossil 300X 125.99 &#163 </p>
+                </div>
+            </div>
+        <br>
+            <div class="row all-products">
+                <div class="col-md-3 col-sm-3 col-6">
+                    <img src="./media/product-9.jpg" alt="product-9">
+                    <div class="text-center mt-1 text-dark">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-center">Roadster C2X <span
+                            class="text-decoration-line-through text-danger">215.99</span> 195.99 &#163 </p>
+                </div>
+                <div class="col-md-3 col-sm-3 col-6">
+                    <img src="./media/product-10.jpg" alt="product-10">
+                    <div class="text-center mt-1 text-dark">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-center">HRX Black 95.99 &#163 </p>
+                </div>
+                <div class="col-md-3 col-sm-3 col-6">
+                    <img src="./media/product-11.jpg" alt="product-11">
+                    <div class="text-center mt-1 text-dark">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-center">HRX Runner 75.99 &#163 </p>
+                </div>
+                <div class="col-md-3 col-sm-3 col-6">
+                    <img src="./media/product-12.jpg" alt="product-12">
+                    <div class="text-center mt-1 text-dark">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-center">HRX Lifter 85.99 &#163 </p>
+                </div>
+                <div class="pagination mt-5">
+                    <span>1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <span>&#8594</span>
+                </div>
+            </div>
+
+    <hr>
+
+    <div class="container">
+        <div class="row on-sale d-flex align-items-center justify-content-center">
+            <h2 class="d-flex align-items-center justify-content-center mb-5 mt-5 text-uppercase">
+                Items&nbsp;<span class="text-danger">On sale </span>
+            </h2>
+            <div class="col-md-3 col-sm-4">
+                <img src="./media/product-1.jpg" alt="product-1">
+                <div class="text-center mt-1 text-dark">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="text-center">Red T-shirt <span class="text-decoration-line-through text-danger">25.99</span>
+                    15.99 &#163 </p>
+            </div>
+            <div class="col-md-3 col-sm-4">
+                <img src="./media/product-2.jpg" alt="product-2">
+                <div class="text-center mt-1 text-dark">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="text-center">Running Shoes <span class="text-decoration-line-through text-danger">85.99</span>
+                    55.99 &#163 </p>
+            </div>
+            <div class="col-md-3 col-sm-4">
+                <img src="./media/product-3.jpg" alt="product-3">
+                <div class="text-center mt-1 text-dark">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="text-center">Leather Shoes <span class="text-decoration-line-through text-danger">95.99</span>
+                    65.99 &#163 </p>
+            </div>
+            <div class="col-md-3 col-sm-4">
+                <img src="./media/product-4.jpg" alt="product-4">
+                <div class="text-center mt-1 text-dark">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="text-center">Blue T-shirt <span class="text-decoration-line-through text-danger">25.99</span>
+                    15.99 &#163 </p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <div class="row categories">
+            <h2 class="d-flex align-items-center justify-content-center mb-5 mt-5 text-uppercase">
+                Featured Products
+            </h2>
+            <div class="col-sm-4 col-md-3 col-lg-3 categories-img">
+                <img src="./media/category-1.jpg" alt="shoes-image-1">
+                <a class="text-decoration-none" href="">
+                    <p class="text-center mt-2 "> Red Nation Sneakers </p>
+                    <div class="text-center text-dark">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <p class="text-center fw-bold"> ONLY <span class="text-danger fw-bolder">69.99
+                            &#163;</span></p>
+                </a>
+            </div>
+            <div class="col-sm-4 col-md-3 col-lg-3 categories-img">
+                <img src="./media/category-2.jpg" alt="shoes-image-2">
+                <a class="text-decoration-none" href="">
+                    <p class="text-center mt-2"> Superstar Sneakers </p>
+                    <div class="text-center text-dark">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <p class="text-center fw-bold"> ONLY <span class="text-danger fw-bolder">55.99
+                            &#163;</span></p>
+                </a>
+            </div>
+            <div class="col-sm-4 col-md-3 col-lg-3 categories-img">
+                <img src="./media/category-3.jpg" alt="shoes-image-3">
+                <a class="text-decoration-none" href="">
+                    <p class="text-center mt-2"> Golden Special Sneakers </p>
+                    <div class="text-center text-dark">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-center fw-bold"> ONLY <span class="text-danger fw-bolder">52.49
+                            &#163;</span> </p>
+                </a>
+            </div>
+        </div>
+        <hr>
+    </div>
+</div>
+
+
+
+
+
+<!-- FOOTER -->
+
+<footer class="flex-rw">
+
+    <ul class="footer-list-top">
+        <li>
+            <h4 class="footer-list-header">About Golden Shoe</h4>
+        </li>
+        <li><a href='#' class="generic-anchor footer-list-anchor text-uppercase">get to know us</a></li>
+        <li><a href='#' class="generic-anchor footer-list-anchor text-uppercase">promos</a></li>
+        <li><a href='#' class="generic-anchor footer-list-anchor text-uppercase">become a retailer</a>
+        </li>
+        <li><a href='#' class="generic-anchor footer-list-anchor text-uppercase">job openings</a></li>
+        <li><a href='#' class="generic-anchor footer-list-anchor text-uppercase">events</a></li>
+    </ul>
+    <ul class="footer-list-top">
+        <li>
+            <h4 class="footer-list-header">The Shoes Selection</h4>
+        </li>
+        <li><a href='#' class="generic-anchor footer-list-anchor text-uppercase">sales and offers</a>
+        </li>
+        <li><a href='#' class="generic-anchor footer-list-anchor text-uppercase">mens collection</a>
+        </li>
+        <li><a href='#' class="generic-anchor footer-list-anchor text-uppercase">ladies collection</a>
+        </li>
+        <li><a href='#' class="generic-anchor footer-list-anchor text-uppercase">kids collection</a>
+        </li>
+        <li><a href='#' class="generic-anchor footer-list-anchor text-uppercase">seasonal collection</a>
+        </li>
+    </ul>
+    <ul class="footer-list-top">
+        <li id='help'>
+            <h4 class="footer-list-header">Please Help Me</h4>
+        </li>
+        <li><a href='#' class="generic-anchor footer-list-anchor">CONTACT</a></li>
+        <li><a href='#' class="generic-anchor footer-list-anchor">RETURNS/FAQ</a></li>
+        <li id='find-a-store'><a href='#' class="generic-anchor footer-list-anchor">STORE LOCATOR</a>
+        </li>
+        <li id='user-registration'><a href='#' class="generic-anchor footer-list-anchor">NEW USERS</a>
+        </li>
+        <li id='order-tracking'><a href='#' class="generic-anchor footer-list-anchor">ORDER STATUS</a>
+        </li>
+    </ul>
+    <section class="footer-social-section flex-rw">
+        <span class="footer-social-overlap footer-social-connect">CONNECT <span class="footer-social-small">with</span>
+            US
+        </span>
+        <span class="footer-social-overlap footer-social-icons-wrapper">
+            <a href="https://www.pinterest.com/" class="generic-anchor" target="_blank" title="Pinterest"><i
+                    class="fa fa-pinterest"></i></a>
+            <a href="https://www.facebook.com" class="generic-anchor" target="_blank" title="Facebook"><i
+                    class="fa fa-facebook"></i></a>
+            <a href="https://twitter.com/" class="generic-anchor" target="_blank" title="Twitter"><i
+                    class="fa fa-twitter"></i></a>
+            <a href="http://instagram.com/" class="generic-anchor" target="_blank" title="Instagram"><i
+                    class="fa fa-instagram"></i></a>
+            <a href="https://www.youtube.com/" class="generic-anchor" target="_blank" title="Youtube"><i
+                    class="fa fa-youtube"></i></a>
+            <a href="https://plus.google.com/" class="generic-anchor" target="_blank" title="Google Plus"><i
+                    class="fa fa-google-plus"></i></a>
+        </span>
+    </section>
+    <section class="footer-bottom-section flex-rw">
+        <div class="footer-bottom-wrapper">
+            <i class="fa fa-copyright" role="copyright">
+            </i> 2022 <address class="footer-address" role="company address">London, UK</address><span
+                class="footer-bottom-rights"> - All Rights Reserved - </span>
+        </div>
+        <div class="footer-bottom-wrapper">
+            <a href="#" class="generic-anchor" rel="nofollow">Terms</a> | <a href="#" class="generic-anchor"
+                rel="nofollow">Privacy</a>
+        </div>
+    </section>
+</footer>
+
+<!-- END OF FOOTER -->
+
+</body>
+</html>
