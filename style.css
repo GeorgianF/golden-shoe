@@ -14,32 +14,33 @@
 }
 
 /* -------------------NAV BAR AND LOGO */
-
 .container-fluid {
     padding: 0;
+    background-color: var(--main-color);
 }
 
-.navbar {
-    background-color: var(--main-color);
+.logo {
+    display: flex;
     align-items: center;
-    font-size: 18px;
+    justify-content: center;
+    margin: 0 auto;
+    height: 100px;
+    width: 300px;
+}
+
+nav {
+    margin: 0 auto;
 }
 
 nav ul {
     list-style-type: none;
-    flex: 1;
-    text-align: right;
-    display: inline-block;
     padding: 10px;
-
-}
-
-nav ul li {
-    margin-right: 20px;
-    margin-top: 10px;
+    
 }
 
 nav ul li a {
+    margin: 5px 20px;
+    font-size: 20px;
     text-decoration: none;
     color: var(--text-color);
     text-transform: uppercase;
@@ -47,15 +48,10 @@ nav ul li a {
     letter-spacing: 2px;
 }
 
-.logo img {
-    padding-left: 30px;
-    height: 150px;
-    width: 240px;
-}
-
 .nav-item {
     position: relative;
     margin-bottom: 3px;
+    padding-top: 10px;
 }
 
 .nav-item:hover {
@@ -78,22 +74,15 @@ nav ul li a {
 }
 
 #cart-image {
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    top: 20px;
-    right: 90px;
+    width: 25px;
+    height: 25px;
 }
 
-#menu-image {
-    width: 28px;
-    height: 28px;
-    transform: translateY(12%);
-    margin-left: 20px;
-    position: absolute;
-    top: 20px;
-    right: 10px;
-    margin-right: 20px;
+#menu-button-mobile {
+    width: 25px;
+    height: 25px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 /* ----------- END OF NAV BAR AND LOGO */
@@ -342,41 +331,6 @@ footer {
 
 
 /* -------------------- MEDIA QUERIES */
-/* @media only screen and (max-width: 1200px) {
-    .navbar {
-        position: relative;
-    } 
-    
-    nav {
-        font-size: 14px;
-    }
-
-    nav ul {
-        position: absolute;
-        top: 166px;
-        left: 0;
-        background-color: #333;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        opacity: 0.8;
-        
-    }
-    
-    .nav-item {
-        color: #fff;
-        letter-spacing: 2px;
-        font-size: 18px;
-        display: block;
-        margin: 50px 10px 0 10px;
-    }
-}  */
-
-@media only screen and (max-width: 991.98px) {
-    
-
-
-}
 
 
 @media only screen and (max-width: 768px) {
@@ -408,17 +362,60 @@ footer {
 
     .main-content {
         flex-wrap: nowrap;
-        font-size: smaller;
+        font-size: 16px;
+    }
+
+    .main-content h1 {
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 800;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .main-content {
+        flex-direction: column;
+        padding-left: 20px;
+    }
+
+    .main-content img {
+        max-width: 90%;
+        padding-left: 30px;
+    }
+
+    .navbar-items a {
+        font-size: 16px;
+    }
+
+    nav ul li a {
+        margin: 5px 10px;
     }
 }
 
 @media only screen and (max-width: 568px) {
+    body {
+        overflow-x: hidden ;
+    }
+
+    .main-content h1,
+    .main-content p {
+        flex-direction: column;
+        padding-left: 20px;
+    }
+    .main-content a {
+        margin-left: 20px;
+    }
+
+    .categories {
+        flex-direction: column;
+    }
+
     main {
-        font-size: 5em
+        font-size: 5em;
     }
 
     .footer-list-top {
-        width: 100%
+        width: 100%;
     }
 
     .footer-list-header {
@@ -426,20 +423,20 @@ footer {
     }
 
     .footer-list-anchor {
-        font-size: 1.5em
+        font-size: 1.5em;
     }
 
     .footer-social-section {
-        justify-content: center
+        justify-content: center;
     }
 
     .footer-social-section::after {
-        top: 25%
+        top: 25%;
     }
 
     .footer-social-connect {
         margin-bottom: 10px;
-        padding: 0 10px
+        padding: 0 10px;
     }
 
     .footer-social-overlap {
@@ -449,7 +446,7 @@ footer {
 
     .footer-social-icons-wrapper {
         width: 100%;
-        padding: 0
+        padding: 0;
     }
 
     .footer-social-overlap>a:not(:first-child) {
@@ -457,19 +454,32 @@ footer {
     }
 
     .footer-bottom-section {
-        padding: 0 5px 10px 5px
+        padding: 0 5px 10px 5px;
     }
 
     .footer-bottom-wrapper {
         text-align: center;
         width: 100%;
-        margin-top: 10px
+        margin-top: 10px;
     }
 }
 
 @media only screen and (max-width: 480px) {
+    .main-content h1,
+    .main-content p {
+        flex-direction: column;
+        padding-left: 20px;
+    }
+    .main-content a {
+        margin-left: 20px;
+    }
+
+    .navbar-items {
+        display: hidden;
+    }
+
     .footer-social-overlap>a {
-        margin: auto
+        margin: auto;
     }
 
     .footer-social-overlap>a:not(:first-child) {
@@ -483,23 +493,31 @@ footer {
 
 @media only screen and (max-width: 320px) {
     .footer-list-header {
-        font-size: 2.2em
+        font-size: 2.2em;
     }
 
     .footer-list-anchor {
-        font-size: 1.2em
+        font-size: 1.2em;
     }
 
     .footer-social-connect {
-        font-size: 2.4em
+        font-size: 2.4em;
     }
 
     .footer-social-overlap>a {
-        font-size: 2.24em
+        font-size: 2.24em;
     }
 
     .footer-bottom-wrapper {
-        font-size: 1.3em
+        font-size: 1.3em;
+    }
+
+    .footer-social-section {
+        font-size: 12px;
+    }
+
+    .footer-bottom-section {
+        font-size: 10px;
     }
 }
 
