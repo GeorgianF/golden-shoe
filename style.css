@@ -622,6 +622,25 @@ form .btn:focus {
         height: 120px;
         width: 120px;
     }
+
+    header ul li  {
+        font-size: 12px;
+    }
+
+    .items {
+        justify-content: center;
+        padding: 0;
+    }
+
+    .product-field ul li {
+        margin-left: 20px;
+    }
+
+    .items img {
+        width: 200px;
+        height: 250px;
+        margin-top: 20px;
+    }
 }
 
 @media only screen and (max-width: 991px) {
@@ -659,6 +678,15 @@ form .btn:focus {
     #option2 {
         height: 80px;
         width: 80px;
+    }
+
+    header {
+        flex-wrap: wrap;
+        height: 60px;
+    }
+
+    .filter-condition {
+        padding-bottom: 15px;
     }
 }
 
@@ -822,6 +850,10 @@ form .btn:focus {
         margin-top: 0px!important;
         margin-left: 20px;
     }
+
+    .filter-condition {
+        font-size: 10px;
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -857,6 +889,17 @@ form .btn:focus {
     .cart-info img {
         height: 70px;
         width: 80px;
+    }
+
+    header ul li {
+        font-size: 10px;
+    }
+
+    header ul li {
+        margin-top: 10px;
+        padding: 5px;
+        float: left;
+        font-size: 12px;
     }
 }
 
@@ -909,5 +952,24 @@ form .btn:focus {
     .inner-table {
         margin: 0;
         padding: 0;
+    }
+
+    header {
+        border-bottom: none;
+    }
+
+    header ul {
+        padding-left: 0;
+    }
+
+    header ul li {
+        margin-top: 20px;
+        padding: 0px;
+        float: left;
+        font-size: 9px;
+    }
+
+    .products-title {
+        margin-bottom: 0!important;
     }
 }
