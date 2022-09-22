@@ -346,6 +346,7 @@ header ul li{
     float: left;
     font-size: 20px;
 }
+
 header ul li a{
     color: var(--text-color);
     text-decoration: none;
@@ -364,18 +365,32 @@ header ul li.active a{
 .product-field ul{
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    
+    flex-wrap: wrap;  
 }
 
 .product-field ul li {
     margin-left: 40px;
     margin-top: 20px;
+    transition: all 0.7s;
 }
 
 .items img {
     width: 200px;
     height: 250px;
+    margin-top: 50px;
+}
+
+.items li {
+    position: relative;
+    
+}
+
+.items li h4 {
+    width: 100%;
+    position: absolute;
+    top: 20px;
+    right: 0%;
+    background-image: linear-gradient(to right, #e6e0bb, #eadcb4, #efd7af, #f4d1aa, #f9cca7, #fbc6a1, #fcbf9b, #feb896, #fdae8c, #fca482, #fa9979, #f98e71);
 }
 
 .on-sale {
