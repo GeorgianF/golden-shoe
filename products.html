@@ -62,193 +62,238 @@
 
     <div class="background-container">
         <div class="container">
+        <main>
+            <header>
+                <ul class="indicator">
+                    <li data-filter="all" class="active"><a href="#" class="text-uppercase">All</a></li>
+                    <li data-filter="Shirt"><a href="#" class="text-uppercase">Shirt</a></li>
+                    <li data-filter="Shoes"><a href="#" class="text-uppercase">Shoes</a></li>
+                    <li data-filter="Watch"><a href="#" class="text-uppercase">Watch</a></li>
+                    <li data-filter="Socks"><a href="#" class="text-uppercase">socks</a></li>
+                    <li data-filter="Trainers"><a href="#" class="text-uppercase">Trainers</a></li>
+                </ul>
+                <div class="filter-condition">
+                    <span>View As a</span>
+                    <select name="" id="select">
+                        <option value="Default">Default</option>
+                        <option value="LowToHigh">Low to high</option>
+                        <option value="HighToLow">High to low</option>
+                    </select>
+                </div>
+            </header>
+
             <div class="row">
                 <h2 class="d-flex align-items-center justify-content-center mb-5 mt-5 text-uppercase">all products
                 </h2>
             </div>
-            <div class="row">
-                <select class="offset-8 col-4 offset-sm-8 col-sm-4 offset-md-9 col-md-3 ">
-                    <option>Sort by price</option>
-                    <option>Sort by popularity</option>
-                    <option>Sort by sale</option>
-                    <option>Sort by rating</option>
-                </select>
             </div>
-        </div>
-        <br>
-        <div class="container">
-            <div class="row all-products">
-                <div class="col-sm-3 col-md-3 col-6">
-                    <img src="./media/product-1.jpg" alt="product-1">
-                    <div class="text-center mt-1 text-dark">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <p class="text-center">Red T-shirt <span
-                            class="text-decoration-line-through text-danger">25.99</span> 15.99 &#163 
-                        <a href="./cart.html" class="btn">Add to cart</a>    
-                    </p>
-                    
+            <br>
+            <div class="container">
+                <div class="product-field">
+                    <ul class="items">
+                        <li data-category="" data-price="">
+                            <img src="./media/product-1.jpg" alt="product-1">
+                            <div class="text-center mt-1 text-dark">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="details text-center">
+                                <strong>Shirt</strong>&nbsp;
+                                <p>Color: Red</p>
+                                <p>Price: <span class="text-decoration-line-through text-danger">25.99</span> 15.99
+                                    &#163</p>
+                                <a href="./cart.html" class="btn">Add to cart</a>
+                            </div>
+                        </li>
+                        <li data-category="" data-price="">
+                            <a class="text-dark" href="./product-details.html">
+                            <img src="./media/product-2.jpg" alt="product-2">
+                            <div class="text-center mt-1 text-dark">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="details text-center">
+                                <strong>Shoes</strong>&nbsp;
+                                <p>Color: Black</p>
+                                <p>Price: <span class="text-decoration-line-through text-danger">85.99</span> 55.99
+                                    &#163</p>
+                                <a href="./cart.html" class="btn">Add to cart</a>
+                            </div>
+                            </a>
+                        </li>
+                        <li data-category="" data-price="">
+                            <img src="./media/product-3.jpg" alt="product-3">
+                            <div class="text-center mt-1 text-dark">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="details text-center">
+                                <strong>Shoes</strong>&nbsp;
+                                <p>Color: Gray Leather</p>
+                                <p>Price: <span class="text-decoration-line-through text-danger">85.99</span> 65.99
+                                    &#163</p>
+                                <a href="./cart.html" class="btn">Add to cart</a>
+                            </div>
+                        </li>
+                        <li data-category="" data-price="">
+                            <img src="./media/product-4.jpg" alt="product-4">
+                            <div class="text-center mt-1 text-dark">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="details text-center">
+                                <strong>Shirt</strong>&nbsp;
+                                <p>Color: Red</p>
+                                <p>Price: <span class="text-decoration-line-through text-danger">25.99</span> 15.99
+                                    &#163</p>
+                                <a href="./cart.html" class="btn">Add to cart</a>
+                            </div>
+                        </li>
+                        <li data-category="" data-price="">
+                            <img src="./media/product-5.jpg" alt="product-5">
+                            <div class="text-center mt-1 text-dark">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="details text-center">
+                                <strong>Shoes</strong>&nbsp;
+                                <p>Color: HiTop Gray</p>
+                                <p>Price: 125.99 &#163</p>
+                                <a href="./cart.html" class="btn">Add to cart</a>
+                            </div>
+                        </li>
+                        <li data-category="" data-price="">
+                            <img src="./media/product-6.jpg" alt="product-6">
+                            <div class="text-center mt-1 text-dark">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="details text-center">
+                                <strong>Shirt</strong>&nbsp;
+                                <p>Color: Black</p>
+                                <p>Price: <span class="text-decoration-line-through text-danger">25.99</span> 15.99
+                                    &#163</p>
+                                <a href="./cart.html" class="btn">Add to cart</a>
+                            </div>
+                        </li>
+                        <li data-category="" data-price="">
+                            <img src="./media/product-7.jpg" alt="product-7">
+                            <div class="text-center mt-1 text-dark">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="details text-center">
+                                <strong>Socks</strong>&nbsp;
+                                <p>Color: Mix</p>
+                                <p>Price: 5.99 &#163</p>
+                                <a href="./cart.html" class="btn">Add to cart</a>
+                            </div>
+                        </li>
+                        <li data-category="" data-price="">
+                            <img src="./media/product-8.jpg" alt="product-8">
+                            <div class="text-center mt-1 text-dark">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="details text-center">
+                                <strong>Watch</strong>&nbsp;
+                                <p>Brand: Fossil</p>
+                                <p>Price: 125.99 &#163</p>
+                                <a href="./cart.html" class="btn">Add to cart</a>
+                            </div>
+                        </li>
+                        <li data-category="" data-price="">
+                            <img src="./media/product-9.jpg" alt="product-9">
+                            <div class="text-center mt-1 text-dark">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="details text-center">
+                                <strong>Watch</strong>&nbsp;
+                                <p>Brand: Roadster</p>
+                                <p>Price: 129.99 &#163</p>
+                                <a href="./cart.html" class="btn">Add to cart</a>
+                            </div>
+                        </li>
+                        <li data-category="" data-price="">
+                            <img src="./media/product-10.jpg" alt="product-10">
+                            <div class="text-center mt-1 text-dark">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="details text-center">
+                                <strong>Shoes</strong>&nbsp;
+                                <p>Color: Black/Red</p>
+                                <p>Price: 85.99 &#163</p>
+                                <a href="./cart.html" class="btn">Add to cart</a>
+                            </div>
+                        </li>
+                        <li data-category="" data-price="">
+                            <img src="./media/product-11.jpg" alt="product-11">
+                            <div class="text-center mt-1 text-dark">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="details text-center">
+                                <strong>Shoes</strong>&nbsp;
+                                <p>Color: Silver</p>
+                                <p>Price: 95.99 &#163</p>
+                                <a href="./cart.html" class="btn">Add to cart</a>
+                            </div>
+                        </li>
+                        <li data-category="" data-price="">
+                            <img src="./media/product-12.jpg" alt="product-12">
+                            <div class="text-center mt-1 text-dark">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="details text-center">
+                                <strong>Trainers</strong>&nbsp;
+                                <p>Color: Black</p>
+                                <p>Price: 25.99 &#163</p>
+                                <a href="./cart.html" class="btn">Add to cart</a>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-                <div class="col-sm-3 col-md-3 col-6">
-                    <a class="text-dark" href="./product-details.html">
-                    <img src="./media/product-2.jpg" alt="product-2">
-                    <div class="text-center mt-1 text-dark">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <p class="text-dark text-center">Running Shoes <span
-                            class="text-decoration-line-through text-danger">85.99</span> 55.99 &#163 
-                            <a href="./cart.html" class="btn">Add to cart</a>   
-                        </p>
-                    </a>
-                </div>
-                <div class="col-sm-3 col-md-3 col-6">
-                    <img src="./media/product-3.jpg" alt="product-3">
-                    <div class="text-center mt-1 text-dark">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <p class="text-center">Leather Shoes <span
-                            class="text-decoration-line-through text-danger">95.99</span> 65.99 &#163 
-                        <a href="./cart.html" class="btn">Add to cart</a>       
-                    </p>
-                </div>
-                <div class="col-md-3 col-sm-3 col-6">
-                    <img src="./media/product-4.jpg" alt="product-4">
-                    <div class="text-center mt-1 text-dark">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <p class="text-center">Blue T-shirt <span
-                            class="text-decoration-line-through text-danger">25.99</span> 15.99 &#163 
-                        <a href="./cart.html" class="btn">Add to cart</a>   
-                    </p>
-                </div>
-            </div>
-        <br>
-            <div class="row all-products">
-                <div class="col-md-3 col-sm-3 col-6">
-                    <img src="./media/product-5.jpg" alt="product-5">
-                    <div class="text-center mt-1 text-dark">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <p class="text-center">Hi-Top Sneakers <span
-                            class="text-decoration-line-through text-danger">115.99</span> 95.99 &#163 
-                        <a href="./cart.html" class="btn">Add to cart</a>   
-                    </p>
-                </div>
-                <div class="col-md-3 col-sm-3 col-6">
-                    <img src="./media/product-6.jpg" alt="product-6">
-                    <div class="text-center mt-1 text-dark">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <p class="text-center">Black T-shirt 25.99 &#163 <br>
-                        <a href="./cart.html" class="btn">Add to cart</a>   
-                    </p>
-                </div>
-                <div class="col-md-3 col-sm-3 col-6">
-                    <img src="./media/product-7.jpg" alt="product-7">
-                    <div class="text-center mt-1 text-dark">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <p class="text-center">HRX Socks 5.99 &#163 <br>
-                        <a href="./cart.html" class="btn">Add to cart</a>   
-                    </p>
-                </div>
-                <div class="col-md-3 col-sm-3 col-6">
-                    <img src="./media/product-8.jpg" alt="product-8">
-                    <div class="text-center mt-1 text-dark">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <p class="text-center">Fossil 300X 125.99 &#163 <br>
-                        <a href="./cart.html" class="btn">Add to cart</a>   
-                    </p>
-                </div>
-            </div>
-        <br>
-            <div class="row all-products">
-                <div class="col-md-3 col-sm-3 col-6">
-                    <img src="./media/product-9.jpg" alt="product-9">
-                    <div class="text-center mt-1 text-dark">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <p class="text-center">Roadster C2X <span
-                            class="text-decoration-line-through text-danger">215.99</span> 195.99 &#163 
-                            <a href="./cart.html" class="btn">Add to cart</a>       
-                    </p>
-                </div>
-                <div class="col-md-3 col-sm-3 col-6">
-                    <img src="./media/product-10.jpg" alt="product-10">
-                    <div class="text-center mt-1 text-dark">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <p class="text-center">HRX Black 95.99 &#163 <br>
-                        <a href="./cart.html" class="btn">Add to cart</a>   
-                    </p>
-                </div>
-                <div class="col-md-3 col-sm-3 col-6">
-                    <img src="./media/product-11.jpg" alt="product-11">
-                    <div class="text-center mt-1 text-dark">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <p class="text-center">HRX Runner 75.99 &#163 <br>
-                        <a href="./cart.html" class="btn">Add to cart</a>   
-                    </p>
-                </div>
-                <div class="col-md-3 col-sm-3 col-6">
-                    <img src="./media/product-12.jpg" alt="product-12">
-                    <div class="text-center mt-1 text-dark">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <p class="text-center">HRX Lifter 85.99 &#163 <br>
-                        <a href="./cart.html" class="btn">Add to cart</a>   
-                    </p>
-                </div>
+
+
                 <div class="pagination mt-5">
                     <span>1</span>
                     <span>2</span>
@@ -257,7 +302,7 @@
                     <span>&#8594</span>
                 </div>
             </div>
-
+        </main>
     <hr>
 
     <div class="container">
@@ -468,6 +513,6 @@
 </footer>
 
 <!-- END OF FOOTER -->
-
+    <script src="filter.js"></script>
 </body>
 </html>
